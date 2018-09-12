@@ -25,7 +25,7 @@ class Sorter {
 
     for (let i = 0, temp; i < indices.length - 1; ++i)
       for (let j = i + 1; j < indices.length; ++j)
-        if (this.comparator(this.array[indices[i]], this.array[indices[j]]) >= 0) {
+        if (this.comparator(this.array[indices[i]], this.array[indices[j]]) > 0) {
           [this.array[indices[i]], this.array[indices[j]]] = [this.array[indices[j]], this.array[indices[i]]];
         }
   }
